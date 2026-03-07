@@ -80,7 +80,7 @@ There are two ways to use this tool without cloning the repo into your project.
 Install once, use anywhere:
 
 ```bash
-pip install git+https://github.com/<your-username>/multi-agent-code-review.git
+pip install git+https://github.com/alanchn31/multi-agent-code-review.git
 export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
