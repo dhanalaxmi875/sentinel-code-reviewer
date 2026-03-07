@@ -12,4 +12,4 @@ code-review = "src.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["src*", "evals*", "examples*"]
+include = ["src*", "evals*", "examples*", "code_review*"]

@@ -111,7 +111,7 @@ Add the workflow file to any repo and it will post an AI review as a comment on 
 ```bash
 mkdir -p .github/workflows
 curl -o .github/workflows/code_review.yml \
-  https://raw.githubusercontent.com/<your-username>/multi-agent-code-review/main/.github/workflows/code_review.yml
+  https://raw.githubusercontent.com/alanchn31/multi-agent-code-review/main/.github/workflows/code_review.yml
 ```
 
 **2. Add your API key as a GitHub secret:**
@@ -130,7 +130,7 @@ Go to your repo → Settings → Secrets → Actions → New secret:
 
 ```bash
 # 1. Clone and enter the directory
-git clone <repo-url>
+git clone https://github.com/alanchn31/multi-agent-code-review.git
 cd multi-agent-code-review
 
 # 2. Install dependencies and register the project on your Python path
@@ -167,8 +167,10 @@ code-review --file sample.diff --output review.md
 
 ### Use as a library
 
+After installing (`pip install -e .` or `pip install git+https://github.com/alanchn31/multi-agent-code-review.git`):
+
 ```python
-from src.main import run_review
+from code_review import run_review
 
 # Pass a unified diff string (e.g., from `git diff`)
 diff = """
