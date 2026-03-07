@@ -252,6 +252,10 @@ examples/
 
 The diff is produced programmatically at import time, so `app_before.py` and `app_after.py` are genuine Python files you can open and read — not embedded strings.
 
+### Demo video
+<video src="./screenshots/demo.mp4" controls width="100%"></video>
+
+
 ## Output Format
 
 The Summarizer produces a structured review:
